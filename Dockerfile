@@ -14,6 +14,6 @@ COPY . /src
 # Install app and dependencies into /src
 RUN cd /src; npm install; npm config set strict-ssl false
 
-EXPOSE 8081
+EXPOSE 8080
 
 CMD cd /src && node ./app.js
